@@ -1,19 +1,24 @@
 /* This is an example CSS file, feel free to remove/edit it anytime */
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
+
+.page-background {
+  background-color: #C8E6CA;
+  min-height: 100vh;
+  display: flex; /* Flexbox, aligns children but not itself */
+  justify-content: center; /* Centers child elem horizontally */
+  align-items: center; /* Centers child elem  vertically */
+}
+.bds-card {
+  width: 1000px;
+  height: 500px;
+  background-color: #ffffff; /* White background for the card */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.footer a {
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.footer span {
-  font-size: 14px;
+@media (min-width: 1024px) {
+  .bds-card {
+    width: 40vw; /* Adjust width for large screens */
+    /* max-width: 300px; Ensures the card doesn’t get too large */
+  }
 }
